@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 16 16" width="16" height="16"
+     fill-rule="evenodd" clip-rule="evenodd"
+     stroke-width="0"
+     fill="#5299d1"
+>
+    <path fill="url(#gradient)" d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5zM14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.762z"/>
+    <circle fill="#FF0000" cx="2.5" cy="2.1" r="2"/>
+    <text fill="#FFFFFF" x="4.8" y="12.5" style="font: bold 6.5px sans-serif;">D</text>
+    <defs>
+        <radialGradient id="gradient" cx="10.4" cy="2.6" r="84" gradientUnits="userSpaceOnUse" >
+            <stop offset="0.00343514" stop-color="#5299d1"/>
+            <stop offset="0.3" stop-color="#1d508f"/>
+            <stop offset="1" stop-color="#04142e"/>
+        </radialGradient>
+    </defs>
+</svg>

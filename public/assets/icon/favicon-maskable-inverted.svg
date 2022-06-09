@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 26 26" width="26" height="26"
+fill-rule="evenodd" clip-rule="evenodd"
+fill="#5299d1">
+<path class="favPath" fill="url(#radial)" d="m0 0v26h26v-26z"/>
+<path fill="#ffffff" d="m16.489 13.312a4.5 4.5 0 0 0-8.72-0.99 3 3 0 0 0 0.232 5.99h8.5a2.5 2.5 0 1 0-0.027-5zm3.056 0.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392 0.91 2.5 2.5 0 0 1 1.17 4.762z"/>
+<defs>
+<style type="text/css"><![CDATA[
+@media (prefers-contrast: more) {
+ .favPath {
+  fill: #5299d1;
+ }
+}
+]]></style>
+<radialGradient id="radial" cx="15.4" cy="7.6" r="84" gradientUnits="userSpaceOnUse">
+ <stop stop-color="#5299d1" offset="0.003435"/>
+ <stop stop-color="#1d508f" offset="0.3"/>
+ <stop stop-color="#04142e" offset="1"/>
+</radialGradient>
+</defs>
+</svg>

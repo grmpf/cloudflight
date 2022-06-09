@@ -1,0 +1,216 @@
+// TODO: redo with flex
+
+.boxLeft {
+	z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    transition: all 1s;
+}
+.boxRight {
+	z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+
+    transition: all 1s;
+}
+
+.boxRight a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+	background-color: rgba(0,0,0,0.2);
+    color: #FFFFFF;
+    text-decoration: none;
+
+    min-width: 14px;
+    min-height: 18px;
+    line-height: 18px;
+    text-align: center;
+
+    padding: 2px 4px;
+	margin: 5px 0 0 5px;
+
+	transition: all 0.3s;
+}
+.boxRight a.active,
+.boxRight a:hover {
+	color: #1D508F;
+	//color: #000000;
+	//background-color: #FFFFFF;
+	background-color: #FFFFFF !important;
+}
+.boxLeft a.toggle:hover,
+.boxRight a.toggle:hover {
+	cursor: pointer;
+}
+
+.boxRight a.width2x {
+    min-width: 55px;
+}
+.boxRight a.width2xB {
+    min-width: 49px;
+}
+.boxRight a.width3x {
+    min-width: 92px;
+}
+.boxRight a.width3xB {
+    min-width: 86px;
+}
+.boxRight a.width1_5x {
+    min-width: 55px;
+}
+.boxRight a.width28 {
+    min-width: 28px;
+}
+
+
+@media (min-width: 769px) {
+    .boxRight a {
+        //padding: 3px 4px 5px 4px;
+        padding: 4px 6px;
+        min-width: 18px;
+        min-height: 22px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxRight a {
+        font-size: 14px;
+        min-width: 18px;
+        line-height: 21px;
+    }
+
+
+    .boxRight a.width2x,
+    .boxRight a.width2xB {
+        min-width: 45px;
+    }
+    .boxRight a.width3x,
+    .boxRight a.width3xB {
+        min-width: 72px;
+    }
+
+
+	.boxLeft a,
+    .boxRight a {
+        //margin: -1px 0 0  -1px;
+        margin: 0;
+    }
+	.boxLeft .row ~.row,
+	.boxRight .row ~.row {
+        margin: -1px 0 0 0;
+    }
+	.boxLeft a ~ a,
+	.boxRight a ~ a {
+        margin: 0 0 0 -1px;
+    }
+}
+
+@media (max-width: 320px) {
+	.boxLeft a,
+    .boxRight a {
+        font-size: 75%;
+        //margin: 0 0 5px 0;
+        margin: 0;
+    }
+	.boxLeft .row {
+		float: left;
+		clear: both;
+	}
+	.boxLeft .row ~ .row,
+    .boxRight .row ~.row {
+        margin: -1px 0 0 0;
+    }
+	.boxLeft a ~ a,
+    .boxRight a ~ a {
+        margin: -1px 0 0 0;
+    }
+	.boxLeft a {
+		float: left;
+		clear: both;
+	}
+    .boxRight a {
+        float: right;
+        clear: both;
+    }
+}
+
+.boxLeft a > svg,
+.boxRight a > svg {
+    margin-bottom: -2px;
+}
+
+
+
+.infoBoxTopCenter {
+	line-height: 1.36;
+}
+.infoBoxTopCenter,
+.infoBoxTopCenter > * {
+	box-sizing: border-box;
+}
+.infoBoxTopCenter {
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	top: 0;
+
+	//min-width: 178px;
+	//max-width: 320px;
+	min-width: 170px;
+	max-width: 190px;
+
+	//margin-left: -200px;
+	//width: 400px;
+	-webkit-transform: translateX(-50%); /* Safari and Chrome */
+	-moz-transform: translateX(-50%); /* Firefox */
+	-ms-transform: translateX(-50%); /* IE 9 */
+	-o-transform: translateX(-50%); /* Opera */
+	transform: translateX(-50%);
+
+	border-radius: 0 0 4px 4px;
+
+	background-color: rgba(0,0,0,0.2);
+	color: #DEDEDE;
+
+	text-align: center;
+	font-size: 9px;
+
+	&.infoBoxTopCenter {
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+
+.infoBoxTopCenter,
+.infoBoxTopCenter > div,
+.infoBoxTopCenter > * {
+	box-sizing: border-box;
+}
+.infoBoxTopCenter > div {
+	padding: 5px 8px 6px 8px;
+}
+.infoBoxTopCenter > div:empty {
+	padding: 0;
+}
+.infoBoxTopCenterFooter {
+	margin: 0 8px;
+	padding: 4px 8px 4px 8px;
+	font-size: 9px;
+	clear: both;
+	float: none;
+	border-top: 1px solid rgba(255,255,255, 0.4);
+}
+.infoBoxTopCenterFooter:empty {
+	border-top: 0 !important;
+}
+@media (min-width: 769px) {
+	.infoBoxTopCenter {
+		//font-size: 11px;
+		font-size: 14px;
+	}
+}

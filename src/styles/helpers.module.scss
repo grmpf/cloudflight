@@ -1,0 +1,34 @@
+// HELPERS / UTILS
+
+
+/** Disables scrolling underneath elements when overlaying element scrolled to the end
+- https://developers.google.com/web/updates/2017/11/overscroll-behavior#chat
+- https://ebidel.github.io/demos/chatbox.html
+*/
+.noScrollOnParent {
+    overflow: auto;
+    overscroll-behavior-y: contain;
+}
+
+
+.notSelectable {
+    //pointer-events: none;
+    -webkit-touch-callout: none; // disable mobile popup/callout on long touch
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.notSelectableBtnLinks {
+	button,
+	a {
+		@extend .notSelectable;
+	}
+}
+
+
+.borderCircle {
+    border-radius: 9999px;
+}
+

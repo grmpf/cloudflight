@@ -1,0 +1,135 @@
+/*
+body { margin: 0; }
+canvas { width: 100%; height: 100% }
+*/
+
+.canvasBox {
+    width: 100%;
+    height: 100%;
+    /*height: 100vh;*/
+
+    overscroll-behavior-x: contain;
+
+	position: relative;
+}
+.canvasBox canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.bg3 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,3b679e+100 */
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%, rgba(59,103,158,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%,rgba(59,103,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(125,185,232,1) 0%,rgba(59,103,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#3b679e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.bg4 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+100 */
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(125,185,232,1) 0%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.bg5 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#212121+0,101010+80 */
+    background: #212121; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #212121 0%, #101010 80%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #212121 0%,#101010 80%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #212121 0%,#101010 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#101010',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.bg5b {
+    background: #212121; /* Old browsers */
+    background: -moz-radial-gradient(bottom center, ellipse cover,  #212121 0%, #101010 80%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(bottom center, ellipse cover,  #212121 0%,#101010 80%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(circle at bottom center,  #212121 0%,#101010 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#101010',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.bg5c {
+    background: #212121; /* Old browsers */
+    background: -moz-radial-gradient(top center, ellipse cover,  #212121 0%, #101010 80%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(top center, ellipse cover,  #212121 0%,#101010 80%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(circle at top center,  #212121 0%,#101010 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#212121',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.bgSky {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#04142e+0,1d508f+37,5299d1+52,1d508f+100 */
+	background: #04142e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #04142e 0%, #1d508f 37%, #5299d1 52%, #1d508f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #04142e 0%,#1d508f 37%,#5299d1 52%,#1d508f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #04142e 0%,#1d508f 37%,#5299d1 52%,#1d508f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04142e', endColorstr='#1d508f',GradientType=0 ); /* IE6-9 */
+}
+.bgSkyLight {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#04142e+0,1d508f+37,5299d1+100 */
+	background: #04142e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #04142e 0%, #1d508f 37%, #5299d1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #04142e 0%,#1d508f 37%,#5299d1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #04142e 0%,#1d508f 37%,#5299d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04142e', endColorstr='#5299d1',GradientType=0 ); /* IE6-9 */
+}
+
+
+.webglDebugStats {
+	position: absolute !important;
+    top: 10px !important;
+    left: 88px !important;
+
+    /*transition: all 0.3s;*/
+}
+.webglDebugStats2 {
+	position: absolute;
+	top: 10px !important;
+	left: 88px !important;
+
+	font-weight: bold;
+
+	min-width: 78px; text-align: center;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 12px 0 14px;
+	min-height: 18px;
+	line-height: 18px;
+}
+
+@media (max-width: 768px) {
+    .webglDebugStats {
+        left: 74px !important;
+    }
+	.webglDebugStats2 {
+		left: 74px !important;
+	}
+}
+
+
+
+.draggable,
+.grabbable {
+    cursor: move; /* fallback: no `url()` support or images disabled */
+    /*cursor: url(images/grab.cur);*/ /* fallback: Internet Explorer */
+    cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+    cursor:    -moz-grab; /* Firefox 1.5-26 */
+    cursor:         grab; /* W3C standards syntax, should come least */
+}
+.moveable {
+	//cursor: move;
+	cursor: crosshair;
+}
+
+.draggable:active,
+.grabbable:active {
+    /*cursor: url(images/grabbing.cur);*/
+    cursor: -webkit-grabbing;
+    cursor:    -moz-grabbing;
+    cursor:         grabbing;
+}
+

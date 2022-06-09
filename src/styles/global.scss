@@ -1,0 +1,57 @@
+/*
+body { margin: 0; }
+canvas { width: 100%; height: 100% }
+*/
+html {
+	overflow-y: scroll;
+
+	// adding bg here can avoid a white screen on pageload
+	//background: -webkit-linear-gradient(top, rgb(4, 20, 46) 0%, rgb(29, 80, 143) 37%, rgb(82, 153, 209) 100%);
+}
+
+@viewport {
+	width: device-width;
+	min-zoom: 2; // o. 200%
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	/* TO TEST
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	*/
+
+	overscroll-behavior-y: none; // disables Android overscroll glow and iOS rubberbanding
+	//overscroll-behavior-x: none; // TODO: testing jumping back in history on mobile devices (maybe only set this around the canvas)
+	overscroll-behavior-x: none; // should be ok for this single page app, to prevent accidental history back and forth.
+}
+
+/* hmmm...
+body {
+	width: 100%;
+	height: 100vh;
+}
+*/
+
+#__next,
+.canvasWrapper {
+	height: 100%;
+}
+
+
+
+
+.block {
+	display: block;
+}
+
+.small {
+	font-size: 80%;
+}

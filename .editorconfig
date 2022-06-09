@@ -1,0 +1,135 @@
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://editorconfig.org
+
+; Details:
+; end_of_line - Unix:lf, DOS:crlf, Mac:cr; for native: don't set
+;
+
+; NOTES: looks like JetBrains uses their own scope (ij_) of variables and also adds the filetype to their names.
+; This might make it possible to toss all those rules in a file without grouping by filetype (untested).
+; If required for something other than a JetBrains IDE, try removing 'ij_' or even 'ij_filetype_' (when supported filetype handling is used).
+
+
+# top-most EditorConfig file
+root = true
+
+
+# GLOBAL
+[*]
+#charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+max_line_length = off
+#insert_final_newline = true #not working
+
+
+[*.{htm,html,ng,sht,shtm,shtml,css,scss,json,js,cjs,jsx,ts,tsx,ats}]
+max_line_length = 99999 ## OFF doesn't work here for JetBrains for whatever reason. 999 ist the max you can enter via gui... 99999 works here though
+charset = utf-8
+indent_style = tab
+indent_size = 4
+#OR (should be the same)
+#indent_style = tab
+#indent_size = tab
+#tab_width = 4
+insert_final_newline = true
+continuation_indent_size = 4 #config for JetBrains only (not documented)
+ij_css_hex_color_long_format = true
+ij_css_hex_color_upper_case = true
+ij_scss_hex_color_long_format = true
+ij_scss_hex_color_upper_case = true
+#ij_typescript_align_imports = true
+#ij_javascript_align_imports = true
+ij_typescript_array_initializer_new_line_after_left_brace = true
+ij_javascript_array_initializer_new_line_after_left_brace = true
+ij_typescript_array_initializer_right_brace_on_new_line = true
+ij_javascript_array_initializer_right_brace_on_new_line = true
+ij_typescript_do_while_brace_force = always
+ij_javascript_do_while_brace_force = always
+ij_typescript_for_brace_force = always
+ij_javascript_for_brace_force = always
+ij_typescript_if_brace_force = always
+ij_javascript_if_brace_force = always
+ij_typescript_while_brace_force = always
+ij_javascript_while_brace_force = always
+ij_typescript_object_literal_wrap = off
+ij_javascript_object_literal_wrap = off
+ij_typescript_indent_chained_calls = true
+ij_typescript_use_chained_calls_group_indents = true
+ij_javascript_indent_chained_calls = true
+ij_javascript_use_chained_calls_group_indents = true
+ij_html_attribute_wrap = off
+ij_xml_attribute_wrap = off
+#ij_html_keep_whitespaces = true #just so a space wont become a linebreak (e.g. "&& <tag />") FYI: max_line_length=off doesnt really work
+#ij_xml_keep_whitespaces = true #just so a space wont become a linebreak (e.g. "&& <tag />") FYI: max_line_length=off doesnt really work
+ij_html_space_inside_empty_tag = true #doesnt work for .tsx - you have to set it via GUI (then it DOES work)
+ij_xml_space_inside_empty_tag = true
+ij_html_text_wrap = off
+ij_xml_text_wrap = off
+ij_html_uniform_ident = true
+
+
+[*.{markdown,md}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+max_line_length = 99999 ## OFF doesn't work here for JetBrains for whatever reason. 999 ist the max you can enter via gui... 99999 works here though
+insert_final_newline = true #not working
+# JETBRAINS MESSED THIS UP and writes/uses MAX as MIN and MIN as MAX. Therefore this should not be used at the moment :(
+# You can teach your IDE to do so if required
+##ij_markdown_max_lines_around_block_elements = 1 #not required
+##ij_markdown_max_lines_around_header = 1 #not required
+#ij_markdown_min_lines_around_block_elements = 0 #set this in your IDE only (NOT in .editorconfig)
+#ij_markdown_min_lines_around_header = 0 #set this in your IDE only (NOT in .editorconfig)
+
+
+[.editorconfig]
+charset = utf-8
+end_of_line = lf
+ij_editorconfig_space_after_comma = false
+
+
+# Ignore paths AKA reset by setting to "unset"
+[node_modules/**]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+tab_width = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+continuation_indent_size = unset
+ij_editorconfig_space_after_comma = unset
+ij_css_hex_color_long_format = unset
+ij_css_hex_color_upper_case = unset
+ij_scss_hex_color_long_format = unset
+ij_scss_hex_color_upper_case = unset
+#ij_typescript_align_imports = unset
+#ij_javascript_align_imports = unset
+ij_typescript_array_initializer_new_line_after_left_brace = unset
+ij_javascript_array_initializer_new_line_after_left_brace = unset
+ij_typescript_array_initializer_right_brace_on_new_line = unset
+ij_javascript_array_initializer_right_brace_on_new_line = unset
+ij_typescript_do_while_brace_force = unset
+ij_javascript_do_while_brace_force = unset
+ij_typescript_for_brace_force = unset
+ij_javascript_for_brace_force = unset
+ij_typescript_if_brace_force = unset
+ij_javascript_if_brace_force = unset
+ij_typescript_while_brace_force = unset
+ij_javascript_while_brace_force = unset
+ij_typescript_object_literal_wrap = unset
+ij_javascript_object_literal_wrap = unset
+ij_typescript_indent_chained_calls = unset
+ij_typescript_use_chained_calls_group_indents = unset
+ij_javascript_indent_chained_calls = unset
+ij_javascript_use_chained_calls_group_indents = unset
+ij_html_attribute_wrap = unset
+ij_xml_attribute_wrap = unset
+#ij_html_keep_whitespaces = unset
+#ij_xml_keep_whitespaces = unset
+ij_html_space_inside_empty_tag = unset
+ij_xml_space_inside_empty_tag = unset
+ij_html_text_wrap = unset
+ij_xml_text_wrap = unset
+ij_html_uniform_ident = unset
